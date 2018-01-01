@@ -33,25 +33,57 @@ $( document ).ready( function() {
 		  $(this).addClass("btn-primary");
 		  $("#chokers-btn").removeClass("btn-primary");
 		  $("#chokers-btn").addClass("btn-link");
+
 		  $("#necklaces-btn").removeClass("btn-primary");
-		  $("#necklaces-btn").addClass("btn-link");		
+		  $("#necklaces-btn").addClass("btn-link");
+
 		  $("#bracelets-btn").removeClass("btn-primary");
-		  $("#bracelets-btn").addClass("btn-link");		  
+		  $("#bracelets-btn").addClass("btn-link");	
 	  }
 	);
+
+	$("#all-btn").click (
+		function() {
+		  $(".choker").css("display", "inline");
+		  $(".necklace").css("display", "inline");
+		  $(".bracelet").css("display", "inline");	
+		  $(".empty-col").css("display", "inline");
+		  $(".hidden-empty-col-choker").css("display", "none");
+		  $(".hidden-empty-col-necklace").css("display", "none");
+		  $(".hidden-empty-col-bracelet").css("display", "none");
+		}
+	);
+
 	
 	$("#chokers-btn").click (
 	  function() {
 		  $(this).removeClass("btn-link");
 		  $(this).addClass("btn-primary");
+
 		  $("#all-btn").removeClass("btn-primary");
 		  $("#all-btn").addClass("btn-link");
+
 		  $("#necklaces-btn").removeClass("btn-primary");
-		  $("#necklaces-btn").addClass("btn-link");		
+		  $("#necklaces-btn").addClass("btn-link");	
+
 		  $("#bracelets-btn").removeClass("btn-primary");
 		  $("#bracelets-btn").addClass("btn-link");		  
+
 	  }
 	);
+
+	$("#chokers-btn").click (
+		function() {
+		  $(".choker").css("display", "inline");
+		  $(".necklace").css("display", "none");
+		  $(".bracelet").css("display", "none");	
+		  $(".empty-col").css("display", "none");
+		  $(".hidden-empty-col-choker").css("display", "inline");
+		  $(".hidden-empty-col-necklace").css("display", "none");
+		  $(".hidden-empty-col-bracelet").css("display", "none");
+		}
+	);	
+
 
 	$("#necklaces-btn").click (
 	  function() {
@@ -66,6 +98,18 @@ $( document ).ready( function() {
 	  }
 	);
 
+	$("#necklaces-btn").click (
+		function() {
+		  $(".choker").css("display", "none");
+		  $(".necklace").css("display", "inline");
+		  $(".bracelet").css("display", "none");
+		  $(".empty-col").css("display", "none");	
+		  $(".hidden-empty-col-choker").css("display", "none");
+		  $(".hidden-empty-col-necklace").css("display", "inline");
+		  $(".hidden-empty-col-bracelet").css("display", "none");
+		}
+	);	
+
 	
 	$("#bracelets-btn").click (
 	  function() {
@@ -78,6 +122,18 @@ $( document ).ready( function() {
 		  $("#all-btn").removeClass("btn-primary");
 		  $("#all-btn").addClass("btn-link");		  
 	  }
+	);	
+
+	$("#bracelets-btn").click (
+		function() {
+		  $(".choker").css("display", "none");
+		  $(".necklace").css("display", "none");
+		  $(".bracelet").css("display", "inline");	
+		  $(".empty-col").css("display", "none");
+		  $(".hidden-empty-col-choker").css("display", "none");
+		  $(".hidden-empty-col-necklace").css("display", "none");
+		  // $(".hidden-empty-col-bracelet").css("display", "inline");
+		}
 	);	
 	
 	

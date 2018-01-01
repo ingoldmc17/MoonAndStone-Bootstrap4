@@ -5701,3 +5701,11 @@ a.darken:hover img {
 .small-hr {
 	width: 75%;
 }
+
+.hidden-empty-col-choker {
+  display: none;
+}
+
+.hidden-empty-col-necklace {
+  display: none;
+}
